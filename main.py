@@ -1,13 +1,13 @@
-from enemy import Enemy
+from enemy import Enemy, Troll
 
 ghoul = Enemy("Ghoul", 12, 1)
 print(ghoul)
 
-ghoul.take_damage(4)
-print(ghoul)
+troll = Troll("")
+print("ALAN: {}".format(troll))
 
-ghoul.take_damage(8)
-print(ghoul)
+troll2 = Troll("Izmak", 15, 1)
+print("Troll2: {}".format(troll2))
 
-ghoul.take_damage(9)
-print(ghoul)
+troll3 = Troll("Urg", 25)
+print(troll, troll2, troll3)
