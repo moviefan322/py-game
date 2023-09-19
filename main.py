@@ -1,24 +1,13 @@
-from player import Player
+from enemy import Enemy
 
-tim = Player("Tim")
+ghoul = Enemy("Ghoul", 12, 1)
+print(ghoul)
 
-print(tim.name)
-print(tim.lives)
-tim.lives -= 1
-print(tim)
+ghoul.take_damage(4)
+print(ghoul)
 
-tim.lives -= 1
-print(tim)
+ghoul.take_damage(8)
+print(ghoul)
 
-tim.lives -= 1
-print(tim)
-
-tim.lives -= 1
-print(tim)
-
-tim.level += 3
-tim.level -= 1
-
-print(tim)
-
-
+ghoul.take_damage(9)
+print(ghoul)

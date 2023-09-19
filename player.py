@@ -16,8 +16,6 @@ class Player(object):
             print("Lives cannot be negative")
             self._lives = 0
 
-    lives = property(_get_lives, _set_lives)
-
     def _get_score(self):
         return self._score
 
@@ -28,8 +26,6 @@ class Player(object):
         else:
             self._score = 0
             print("Score may not be negative")
-
-    score = property(_get_score, _set_score)
 
     def _get_level(self):
         return self._level
@@ -44,6 +40,8 @@ class Player(object):
             print("Level may not be negative")
 
     level = property(_get_level, _set_level)
+    score = property(_get_score, _set_score)
+    lives = property(_get_lives, _set_lives)
 
     def __str__(self):
         return "Name: {0.name}, Lives: {0.lives}, Level: {0.level}, Score: {0.score}" \
